@@ -1,0 +1,41 @@
+<?php
+
+return [
+    'deleted' => '削除しました。',
+    'saved' => '保存しました',
+    'success' => '成功しました',
+    'success_exception' => '除外しました',
+    'not_found' => '対象のデータが見つかりませんでした。',
+    'save_confirm' => '保存します。よろしいですか。',
+    'save_failed' => 'データの登録に失敗しました。',
+    'internal_error' => '内部エラーが発生しました',
+    'no_admin_permission' => '管理者権限が付与されていません',
+    'no_permission' => '権限が付与されていません',
+    'updated' => '更新しました。',
+    'updated_by_others' => 'ほかのユーザによって更新されています',
+    'reload_screen' => '画面を再読み込みします',
+    'work_in_user_exist' => '作業中ユーザが{count}人います',
+    'not_reach_parallel' => '並列度{count}に達していません',
+    'not_set_evenness' => '均等度が設定されていません',
+    'not_correctly_set_evenness' => '均等度が適切に設定されていません',
+    'display_in_external_link' => '外部サイトを別ウインドウで表示します',
+    'please_selected_ok' => '表示する場合はOKをクリックしてください',
+    'is_inactive_request_work' => 'この依頼作業は無効なステータスです',
+    'is_completed_request' => 'この依頼は完了済みです',
+    'is_deleted_request' => 'この依頼は除外済みです',
+    'overdue' => '納期を超過しています',
+    'parts_of_text' => [
+        'for' => 'のため',
+        'failed' => 'できませんでした。'
+    ],
+    'read_failed' => '読込に失敗しました',
+    'not_importable_with_errors' => 'エラー項目があるため取込みできません',
+    'requests_imported' => '依頼を取込みました',
+    'orders_imported' => '案件を取込みました',
+    'no_order_detail_subject' => '件名の無い案件明細があるため取込できません',
+    'file_delete_failed' => 'ファイルの削除に失敗しました',
+    'to_client' => [
+        'is_excepted_request' => 'この依頼は無効となりました',
+    ],
+    'timeout_error' => 'タイムアウトしました',
+];

@@ -1,0 +1,209 @@
+/*
+ * クライアント用依頼詳細
+ */
+.client-step-progress {
+    .progress-type-title {
+        font-size: 18px;
+    }
+    .progress-content {
+        display: flex;
+        align-items:center;
+        .percentage-wrap {
+            width: 46px;
+            max-width: 46px;
+            min-width: 46px;
+        }
+    }
+    .step-progress-box {
+        border: 1px solid rgba(215, 215, 215, 1);
+        margin-bottom: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        .step-name {
+            font-size: 16px;
+        }
+    }
+    .step-progress-toggle-btn {
+        min-width: 40px;
+    }
+}
+#appendices .attachments .v-badge__badge {
+    font-size: 12px;
+    height: 18px;
+    width: 18px;
+}
+
+// 進捗バー
+.progress-bar-wrap .progress-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 24px;
+    background-color: rgba(0, 217, 173, 1);
+    width: 100%;
+    border: 5px solid rgba(170, 170, 170, 1);
+    border-radius: 100px;
+    box-shadow:0px 0px 4px 0px rgba(170, 170, 170, 1) inset;
+}
+.progress-bar-wrap .progress-bar-inner {
+    height: 24px;
+    background-color: rgba(170, 170, 170, 1);
+    border-radius: 100px;
+    position:relative;
+    display: flex;
+    align-items: center;
+}
+.progress-bar-wrap .arrow-right-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color:rgba(0, 217, 173, 1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 1px solid rgba(170, 170, 170, 0.7);
+    box-shadow: 0px 0px 2px 0px rgba(170, 170, 170, 0.7);
+    position:absolute;
+    right: -4px;
+}
+.progress-bar-wrap.total-progress {
+    .progress-bar {
+        height: 33px;
+    }
+    .progress-bar-inner {
+        height: 33px;
+    }
+    .arrow-right-circle {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        right: -12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .v-icon {
+            font-size: 36px;
+        }
+    }
+}
+.step-progress-bar-wrap {
+    display: flex;
+    align-items: center;
+    // 依頼コード単位の進捗バー
+    .progress-bar-wrap.with-process {
+        position: relative;
+        .progress-bar {
+            height: 22px;
+            .progress-part-bar-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                position: absolute;
+                .progress-part-bar {
+                    width: 25%;
+                    height: 16px;
+                }
+                .progress-part-bar.completed-progress {
+                    background-color: #aaa;
+                }
+            }
+        }
+        .progress-bar-inner {
+            height: 22px;
+        }
+        .arrow-right-circle {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            right: -18px;
+            align-items: center;
+            justify-content: center;
+            .v-icon {
+                font-size: 22px;
+            }
+        }
+        .process-mark-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            position: absolute;
+            .arrow-right-circle-wrap {
+                position: relative;
+                .arrow-right-circle {
+                    left: -4px;
+                    right: 0;
+                    top: -22px;
+                    bottom :0;
+                    margin:  auto;
+                }
+            }
+            .v-icon.completed-process-mark {
+                width: 22px;
+                height: 22px;
+                line-height: 22px;
+                margin: 0 auto;
+                font-size: 16px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+                color: #aaa!important;
+                background: #555555;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+            }
+        }
+    }
+}
+.step-progress-detail-wrap {
+    width: 100%;
+    .step-progress-detail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .process-block {
+            width: 160px;
+            background-color: rgba(252, 252, 252, 1);
+            .process-status-icon-wrap {
+                border-bottom: 1px solid rgba(215, 215, 215, 1);
+                .v-icon {
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    margin: 0 auto;
+                    font-size: 18px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: center;
+                    color: #fff;
+                    background-color: rgba(0, 217, 173, 1);
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                }
+                .process-name {
+                    font-size: 16px;
+                }
+                .completed-process-icon-bg {
+                    background-color: #aaa!important;
+                }
+            }
+            .process-date {
+                font-size: 10px;
+            }
+        }
+        .arrow-right-process-detail {
+            font-size: 40px;
+            color: rgba(0, 217, 173, 1);
+        }
+    }
+}

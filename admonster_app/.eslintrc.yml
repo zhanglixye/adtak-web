@@ -1,0 +1,28 @@
+env:
+  es6: true
+extends:
+  - 'eslint:recommended'
+  - 'plugin:vue/essential'
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+  Vue: readonly
+  axios: readonly
+  eventHub: readonly
+  _const: readonly
+  $: readonly
+  moment: readonly
+  require: readonly
+  global: readonly
+  process: readonly
+  location: writable
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+plugins:
+  - vue
+rules: {
+  "indent": ["error", 4],
+  "keyword-spacing": ["error", { "before": true , "after": true }],
+  "quotes": ["error","single"]
+}

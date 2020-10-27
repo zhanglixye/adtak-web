@@ -1,0 +1,20 @@
+/*
+ *  Overwrite
+ */
+.v-input .v-input__control .v-input__slot input,
+.v-input .v-input__control .v-input__slot label {
+    font-size: 16px;
+}
+.v-btn .v-btn__content {
+    font-size: 14px;
+}
+.v-text-field {
+    padding-top: 0px!important;
+}
+.v-progress-circular {
+  top: 50%;
+  left: 50%;
+}
+/*
+ *  Original
+ */

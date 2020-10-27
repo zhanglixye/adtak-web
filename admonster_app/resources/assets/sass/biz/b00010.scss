@@ -1,0 +1,237 @@
+/*
+ * new view scss made kai-zlx
+ */
+//共同样式 -- zlx
+.flex_column{
+  display: flex;
+  flex-direction: column;
+}
+small{
+  color: rgb(160, 160, 160);
+}
+.text-center-input input{
+  text-align: center;
+}
+//编辑器组件
+.ql-snow .ql-picker.ql-size .ql-picker-label::before, .ql-snow .ql-picker.ql-size .ql-picker-item::before{
+  content: '16' !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=large]::before, .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=large]::before{
+  content: '19.5' !important;
+}
+.ql-snow .ql-picker.ql-size .ql-picker-label[data-value=huge]::before, .ql-snow .ql-picker.ql-size .ql-picker-item[data-value=huge]::before{
+  content: '32.5' !important;
+}
+//UnKown组件
+.known .theme--light.v-text-field.v-input--is-disabled > .v-input__control > .v-input__slot:before{
+  border-image: none;
+}
+.known .theme--light.v-input--is-disabled .v-label,.known div:nth-child(2){
+  color: rgb(130,130,130);
+}
+.known .theme--light.v-input--is-disabled input{
+  color: rgb(0,0,0);
+}
+//btn success改变
+.application button.success{
+  background-color: #4db6ac!important;
+  border-color: #4db6ac!important;
+}
+//经费页面 - 申请合计金额 重载
+.bg-white{
+  label{
+    background-color: rgb(255,255,255);
+}
+}
+//a标签样式统一化
+.application a{
+  text-decoration: underline;
+}
+
+//业务确认页面默认disabled样式修改
+.business_t_recognize .theme--light.v-input--is-disabled .v-label,.theme--light.v-input--is-disabled input{
+  color:rgba(0,0,0,0.87) !important;
+}
+.business_t_recognize .v-label{
+  font-size: 12px !important;
+}
+.no-gutters {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%;
+}
+.col-1 {
+  -ms-flex: 0 0 8.3333333333%;
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+.col-2 {
+  -ms-flex: 0 0 16.6666666667%;
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+.col-4 {
+  -ms-flex: 0 0 33.3333333333%;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-8 {
+  -ms-flex: 0 0 66.6666666667%;
+  flex: 0 0 66.6666666667%;
+  max-width:66.6666666667%;
+}
+.col-10 {
+  -ms-flex: 0 0 83.3333333333%;
+  flex: 0 0 83.3333333333%;
+  max-width:83.3333333333%;
+}
+.col-11 {
+  -ms-flex: 0 0 91.6666666667%;
+  flex: 0 0 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto{
+  width: 100%;
+  padding: 12px;
+}
+/* row class重写*/
+.row_overwrite{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+/*文件上传组件点击下载文件样式重写*/
+.drop .file-name span{
+  cursor: pointer;
+}
+.drop .file-name span:hover{
+  color: #0f9d58;
+}
+//编辑器样式 overwrite
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=Meiryo]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=Meiryo]::before {
+  content: "Meiryo";
+  font-family: Meiryo;
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=Meiryo-UI]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=Meiryo-UI]::before {
+  content: "Meiryo UI";
+  font-family: "Meiryo UI";
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=MS-Gothic]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=MS-Gothic]::before {
+  content: "MS Gothic";
+  font-family: "MS Gothic";
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=MS-PGothic]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=MS-PGothic]::before {
+  content: "MS PGothic";
+  font-family: "MS PGothic";
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=MS-UI-Gothic]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=MS-UI-Gothic]::before {
+  content: "MS UI Gothic";
+  font-family: "MS UI Gothic";
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=MS-Mincho]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=MS-Mincho]::before {
+  content: "MS Mincho";
+  font-family: "MS Mincho";
+}
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value=MS-PMincho]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value=MS-PMincho]::before {
+  content: "MS PMincho";
+  font-family: "MS PMincho";
+}
+
+.ql-container{
+  font-family: Meiryo !important;
+}
+
+.ql-font-Meiryo {
+  font-family: Meiryo;
+}
+.ql-font-Meiryo-UI {
+  font-family: "Meiryo UI";
+}
+.ql-font-MS-Gothic {
+  font-family: "MS Gothic";
+}
+.ql-font-MS-PGothic {
+  font-family: "MS PGothic";
+}
+.ql-font-MS-UI-Gothic {
+  font-family: "MS UI Gothic";
+}
+.ql-font-MS-Mincho {
+  font-family: "MS Mincho";
+}
+.ql-font-MS-PMincho {
+  font-family: "MS PMincho";
+}
+
+.ql-snow .ql-picker.ql-font{
+  width: 135px;
+}
+.s00011_container div::-webkit-scrollbar ,.edit_container div::-webkit-scrollbar{
+  display: none;
+}
+.default_text p{
+  margin: 0 !important;
+}
+.editor-edit:hover{
+  color: #1976d2;
+}
+.row_new .btn-icon #un_kown a{
+  width: 100px !important;
+  margin-right: 18px !important;
+  display: block;
+}
+
+/*S16 PDF预览窗口滚动条样式
+.pdf-box .v-responsive::-webkit-scrollbar 滚动条整体部分，可以设置宽度啥的
+.pdf-box .v-responsive::-webkit-scrollbar-button 滚动条两端的按钮
+.pdf-box .v-responsive::-webkit-scrollbar-track  外层轨道
+.pdf-box .v-responsive::-webkit-scrollbar-track-piece  内层滚动槽
+.pdf-box .v-responsive::-webkit-scrollbar-thumb 滚动的滑块
+.pdf-box .v-responsive::-webkit-scrollbar-corner 边角
+.pdf-box .v-responsive::-webkit-resizer 定义右下角拖动块的样式*/
+.pdf-box .v-responsive{
+    overflow: auto;
+}
+.pdf-box .v-responsive::-webkit-scrollbar {
+    height: 12px;
+}
+.pdf-box .v-responsive::-webkit-scrollbar:vertical{
+    display: none;
+}
+.pdf-box .v-responsive::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+}
+.pdf-box .v-responsive::-webkit-scrollbar-thumb {
+    background-color: #aaaaaa;
+}
+
+/*设置S16右侧组件的最大宽度，避免PDF放大时页面超宽后变形*/
+.child-flex>*, .flex{
+    max-width: 96%;
+}

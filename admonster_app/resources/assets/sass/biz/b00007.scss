@@ -1,0 +1,22 @@
+/*修改S13业务的详细页面的判定的文本样式*/
+.block-two .theme--light.v-label{
+    font-size: 16px !important;
+    margin-bottom: 0;
+}
+/*修改弹窗的的宽度为自动*/
+.preview-popup.v-dialog.v-dialog--active{
+    width: auto;
+    max-width: 80%;
+}
+.preview-popup.v-dialog.v-dialog--active.v-dialog--scrollable{
+    display: block;
+}
+.preview-popup.v-dialog.v-dialog--active.v-dialog--scrollable::-webkit-scrollbar{
+    display: block;
+    width:16px;
+    height: 16px;
+    background-color: #acacac;
+}
+.preview-popup.v-dialog.v-dialog--active.v-dialog--scrollable::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.7);
+}
